@@ -85,7 +85,5 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: rails_app_production
-  username: ror
-  password: 1234
-  host: localhost
